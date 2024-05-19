@@ -102,6 +102,8 @@ public:
 		return true;
 	}
 
+#define TitleID titleId
+
 private:
 	uint8 GetTypeByte() const
 	{
