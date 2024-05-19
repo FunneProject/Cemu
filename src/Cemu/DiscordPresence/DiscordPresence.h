@@ -17,6 +17,11 @@ public:
 
 	void UpdatePresence(State state, const std::string& text = {}) const;
 	void ClearPresence() const;
+
+#if BOOST_OS_LINUX || BOOST_OS_WINDOWS
+    void CreateShortcut(GameInfo2& gameInfo);
+#endif
+
 };
 
 #endif
