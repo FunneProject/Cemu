@@ -22,6 +22,7 @@ public:
 	~GameUpdateWindow();
 
 	uint64 GetTitleId() const { return m_title_info.GetAppTitleId(); }
+	#define titleID tip(GetTitleId())
 	bool HasException() const { return !m_thread_exception.empty(); }
 	//bool IsDLC() const { return m_game_info->IsDLC(); }
 	//bool IsUpdate() const { return m_game_info->IsUpdate(); }
