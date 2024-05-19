@@ -32,7 +32,7 @@ void DiscordPresence::UpdatePresence(State state, const std::string& text) const
 		break;
 	case Playing:
 		details_string = "Ingame";
-		large_image = "https://raw.githubusercontent.com/FunneProject/cemu-icons/main/icons/" + titleId + ".png";
+		large_image = "https://raw.githubusercontent.com/FunneProject/cemu-icons/main/icons/" + TitleID + ".png";
 		state_string = "Playing " + text;
 		break;
 	default:
