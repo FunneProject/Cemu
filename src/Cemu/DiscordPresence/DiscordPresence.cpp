@@ -22,15 +22,16 @@ void DiscordPresence::UpdatePresence(State state, const std::string& text) const
 {
 	DiscordRichPresence discord_presence{};
 
-	std::string state_string, details_string, large_image;
+	std::string state_string, details_string, large_image, small_image;
 	switch (state)
 	{
 	case Idling:
 		details_string = "Idling";
-		large_image = "https://static-00.iconduck.com/assets.00/cemu-icon-256x256-ut8jmmgf.png";
+		large_image = "logo_icon_big_png";
 		break;
 	case Playing:
 		details_string = "Ingame";
+		large_image = "https://raw.githubusercontent.com/FunneProject/cemu-icons/main/icons/" + titleid + ".png";
 		state_string = "Playing " + text;
 		break;
 	default:
