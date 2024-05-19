@@ -1,6 +1,7 @@
 #pragma once
 
 #ifdef ENABLE_DISCORD_RPC
+#include <Cafe/TitleList/GameInfo.h>
 
 class DiscordPresence
 {
