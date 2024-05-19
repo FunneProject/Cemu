@@ -93,10 +93,3 @@ jobs:
       with:
         name: cemu-bin-windows-x64
         path: ./bin/Cemu.exe
-              
-    - name: Upload artifact
-      uses: actions/upload-artifact@v4
-      if: ${{ inputs.deploymode == 'release' }}
-      with:
-        name: cemu-bin-macos-x64
-        path: ./bin/Cemu.dmg
