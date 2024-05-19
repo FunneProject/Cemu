@@ -102,8 +102,6 @@ public:
 		return true;
 	}
 
-#define TitleID titleId
-
 private:
 	uint8 GetTypeByte() const
 	{
@@ -125,3 +123,5 @@ private:
 
 	TitleId m_titleId;
 };
+
+#define TitleID titleId
