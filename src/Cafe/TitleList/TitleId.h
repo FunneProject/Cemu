@@ -124,4 +124,4 @@ private:
 	TitleId m_titleId;
 };
 
-#define TitleID titleId
+#define TitleID TitleIdParser titleIdParser(titleId);
